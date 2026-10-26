@@ -7,95 +7,243 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>DEGRO.ID - сайт с мемами</title>
 </head>
-<body>
-<div class="left_sidebar">
-    <div class="main_sidebar">
-        <div class="logo_block">
+<body class="page">
 
-        </div>
-        <div class="manage_block">
-            <nav class="nav_list">
+<div class="layout">
 
-            </nav>
-            <button class="create_meme_btn">
+    <!-- Левая панель -->
+    <aside class="layout__sidebar sidebar">
 
-            </button>
-        </div>
-    </div>
-    <div class="account_block">
-        <img class="user_avatar" src="" alt=""/>
-        <div class="user_info">
-            <div class="first_name">Аня М.</div>
-            <div class="username">@anya_m</div>
-        </div>
-        <div class="more_user_settings">
+        <a class="logo" href="#">
+            <span class="logo__text"></span>
+        </a>
 
-        </div>
-    </div>
-</div>
-<main class="main">
-    <div class="content">
-        <div class="media_feed_block">
-            <div class="heading_block">
-                <div class="subtitle">твоя мемосфера</div>
-                <div class="title">Что смешного?</div>
+        <nav class="navigation">
+            <ul class="navigation__list">
+                <li class="navigation__item navigation__item_active">
+                    <a class="navigation__link" href="#">
+                        <span class="navigation__icon"></span>
+                        <span class="navigation__text"></span>
+                    </a>
+                </li>
+                <li class="navigation__item">
+                    <a class="navigation__link" href="#">
+                        <span class="navigation__icon"></span>
+                        <span class="navigation__text"></span>
+                    </a>
+                </li>
+                <li class="navigation__item">
+                    <a class="navigation__link" href="#">
+                        <span class="navigation__icon"></span>
+                        <span class="navigation__text"></span>
+                        <span class="navigation__badge"></span>
+                    </a>
+                </li>
+                <li class="navigation__item">
+                    <a class="navigation__link" href="#">
+                        <span class="navigation__icon"></span>
+                        <span class="navigation__text"></span>
+                    </a>
+                </li>
+                <li class="navigation__item">
+                    <a class="navigation__link" href="#">
+                        <span class="navigation__icon"></span>
+                        <span class="navigation__text"></span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <button class="button button_primary create-button" type="button">
+            <span class="button__icon"></span>
+            <span class="button__text"></span>
+        </button>
+
+        <div class="sidebar__footer">
+            <div class="user-profile">
+                <img class="user-profile__avatar" src="" alt="">
+                <div class="user-profile__info">
+                    <span class="user-profile__name"></span>
+                    <span class="user-profile__username"></span>
+                </div>
+                <button class="user-profile__menu" type="button"></button>
             </div>
-            <div class="sorting_block">
-                <div class="for_you">
-
-                </div>
-                <div class="trends">
-
-                </div>
-                <div class="fresh">
-
-                </div>
-            </div>
-            <div class="content_block">
-
-            </div>
         </div>
-        <div class="widgets">
-            <div class="stats_widget">
-                <div class="stats_widget_header">
-                    <img src="" alt="" class="point">
-                    <div class="stats_title">пульс сегодня</div>
-                </div>
-                <div class="quantity">24819</div>
-                <div class="quantity_subtitle">мемов посмотрели</div>
-                <div class="activity_scale_block">
 
+    </aside>
+
+    <!-- Центральная часть -->
+    <main class="layout__main main">
+
+        <section class="feed">
+
+            <header class="feed__header">
+                <div class="feed__heading">
+                    <span class="feed__eyebrow"></span>
+                    <h1 class="feed__title"></h1>
                 </div>
+
+                <nav class="tabs">
+                    <a class="tabs__item tabs__item_active" href="#"></a>
+                    <a class="tabs__item" href="#"></a>
+                    <a class="tabs__item" href="#"></a>
+                </nav>
+            </header>
+
+            <div class="feed__list">
+
+                <!-- Карточка мема -->
+                <article class="meme-card">
+
+                    <div class="meme-card__media">
+                        <img class="meme-card__image" src="" alt="">
+                        <h2 class="meme-card__title"></h2>
+                    </div>
+
+                    <div class="meme-card__content">
+
+                        <header class="meme-card__header">
+                            <div class="meme-card__author">
+                                <img class="meme-card__avatar" src="" alt="">
+
+                                <div class="meme-card__author-info">
+                                    <span class="meme-card__author-name"></span>
+                                    <span class="meme-card__meta"></span>
+                                </div>
+                            </div>
+
+                            <button class="meme-card__menu" type="button"></button>
+                        </header>
+
+                        <div class="meme-card__description"></div>
+
+                        <ul class="meme-card__tags">
+                            <li class="meme-card__tag"></li>
+                            <li class="meme-card__tag"></li>
+                        </ul>
+
+                        <div class="meme-card__actions">
+                            <button class="meme-card__action meme-card__action_like" type="button">
+                                <span class="meme-card__action-icon"></span>
+                                <span class="meme-card__action-count"></span>
+                            </button>
+
+                            <button class="meme-card__action meme-card__action_comments" type="button">
+                                <span class="meme-card__action-icon"></span>
+                                <span class="meme-card__action-count"></span>
+                            </button>
+
+                            <button class="meme-card__action meme-card__action_share" type="button">
+                                <span class="meme-card__action-icon"></span>
+                                <span class="meme-card__action-label"></span>
+                            </button>
+                        </div>
+
+                        <!-- Комментарии -->
+                        <section class="comments">
+
+                            <header class="comments__header">
+                                <h3 class="comments__title"></h3>
+                                <button class="comments__all" type="button"></button>
+                            </header>
+
+                            <ul class="comments__list">
+                                <li class="comments__item">
+
+                                    <img class="comments__avatar" src="" alt="">
+
+                                    <div class="comments__content">
+                                        <div class="comments__author"></div>
+                                        <p class="comments__text"></p>
+                                        <time class="comments__date"></time>
+                                    </div>
+
+                                </li>
+                            </ul>
+
+                            <form class="comments__form">
+                                <input
+                                        class="comments__input"
+                                        type="text"
+                                >
+                                <button
+                                        class="comments__submit"
+                                        type="submit"
+                                ></button>
+                            </form>
+
+                        </section>
+
+                    </div>
+                </article>
+
             </div>
-            <div class="top_tags_widget">
-                <header class="top_tags_header">
-                    <div class="top_tags_title">Сейчас растёт</div>
-                    <a href="" class="all_themes">Все темы</a>
+
+            <nav class="feed__pagination"></nav>
+
+        </section>
+
+        <!-- Правая панель -->
+        <aside class="layout__aside right-sidebar">
+
+            <section class="statistics">
+                <header class="statistics__header">
+                    <span class="statistics__indicator"></span>
+                    <span class="statistics__label"></span>
                 </header>
-                <div class="top_tags_line">
-                    <img src="" alt="" class="place">
-                    <div class="tags_name">#офисныйдзен</div>
-                    <div class="uses_times">18% за час</div>
+
+                <div class="statistics__body">
+                    <span class="statistics__value"></span>
+                    <span class="statistics__caption"></span>
                 </div>
-                <div class="top_tags_line">
-                    <img src="" alt="" class="place">
-                    <div class="tags_name">#офисныйдзен</div>
-                    <div class="uses_times">18% за час</div>
+
+                <div class="statistics__chart">
+                    <span class="statistics__bar"></span>
                 </div>
-                <div class="top_tags_line">
-                    <img src="" alt="" class="place">
-                    <div class="tags_name">#офисныйдзен</div>
-                    <div class="uses_times">18% за час</div>
+            </section>
+
+            <section class="trending">
+                <header class="trending__header">
+                    <h2 class="trending__title"></h2>
+                    <a class="trending__link" href="#"></a>
+                </header>
+
+                <ol class="trending__list">
+                    <li class="trending__item">
+                        <span class="trending__rank"></span>
+                        <div class="trending__info">
+                            <a class="trending__name" href="#"></a>
+                            <span class="trending__meta"></span>
+                        </div>
+                    </li>
+                </ol>
+            </section>
+
+            <article class="weekly-pick">
+                <span class="weekly-pick__label"></span>
+                <h2 class="weekly-pick__title"></h2>
+                <a class="weekly-pick__link" href="#">
+                    <span class="weekly-pick__icon"></span>
+                </a>
+            </article>
+
+            <article class="product-card">
+                <div class="product-card__icon"></div>
+                <div class="product-card__content">
+                    <h3 class="product-card__title"></h3>
+                    <p class="product-card__description"></p>
                 </div>
-            </div>
-            <div class="week_challenge_widget">
-                <div class="week_challenge_header">челендж недели</div>
-                <div class="challenge_block">
-                    <div class="challenge_name">Мой идеальный понедельник</div>
-                </div>
-            </div>
-        </div>
-    </div>
-</main>
+            </article>
+
+            <footer class="right-sidebar__footer">
+                <a class="right-sidebar__link" href="#"></a>
+            </footer>
+
+        </aside>
+
+    </main>
+
+</div>
+
 </body>
 </html>
