@@ -99,20 +99,136 @@ body {
     color: white;
 }
 
-.layout__main {
+.create-button {
+    all: unset;
     width: 100%;
+    border-radius: 15px;
+    font-weight: 800;
+    background-color: #C9FF38;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    cursor: pointer;
+    min-height: 50px;
+}
+
+.button__icon {
+    display: flex;
+    align-items: center;
     justify-content: center;
 }
 
-.feed__eyebrow {
+.button__icon svg {
+    width: 21px;
+    height: 21px;
+    fill: none;
+    stroke: #171814;
+    stroke-width: 1;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
 
+.sidebar__footer {
+
+}
+
+.user-profile {
+
+}
+
+.user-profile__avatar {
+
+}
+
+.user-profile__info {
+
+}
+
+.user-profile__name {
+
+}
+
+.user-profile__username {
+
+}
+
+.user-profile__menu {
+
+}
+
+
+.layout__main {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 32px clamp(24px,3vw,48px) 90px;
+}
+
+.layout__home {
+    display: flex;
+    justify-content: center;
+    max-width: 1072px;
+}
+
+.feed {
+    width: 760px;
+}
+
+.right-sidebar {
+    width: 290px;
+}
+
+.feed__header {
+    width: 100%;
+}
+
+.feed__heading {
+    margin-bottom: 22px;
+}
+
+.feed__eyebrow {
     color: #79A400;
     font-size: 10px;
     font-weight: 800;
 }
 
-.feed {
+.feed__title {
+    font-family: "Unbounded", sans-serif;
+    color: #171814;
+    font-size: 27px;
+    font-weight: 700;
+    font-style: bold;
+    margin: 0;
+}
+
+.tabs {
+    display: flex;
+    width: 100%;
+    background: rgba(251, 250, 246, .9);
+    padding: 5px;
+    border: 1px solid #D9D6CD;
+    border-radius: 17px;
+    box-shadow: 0 7px 20px rgba(20, 21, 17, .04);
+    backdrop-filter: blur(18px);
+    margin-bottom: 14px;
+}
+
+.tabs__item {
+    all: unset;
+    border-radius: 12px;
+    color: #74766E;
+    font-weight: 700;
+    height: 40px;
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.tabs__item_active{
+    background-color: #171814;
+    color: white;
 }
 
 .right-sidebar {

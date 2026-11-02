@@ -85,7 +85,10 @@
             </nav>
 
             <button class="button button_primary create-button" type="button">
-                <span class="button__icon"></span>
+                <span class="button__icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="24px" width="24px"
+                         fill="#e3e3e3"><path d="M11.5,12.5H6v-1h5.5V6h1v5.5H18v1H12.5V18h-1V12.5Z"/></svg>
+                </span>
                 <span class="button__text">Создать мем</span>
             </button>
         </div>
@@ -106,136 +109,139 @@
     <!-- Центральная часть -->
     <main class="layout__main main">
 
-        <section class="feed">
+        <div class="layout__home">
 
-            <header class="feed__header">
-                <div class="feed__heading">
-                    <span class="feed__eyebrow">Твоя мемосфера</span>
-                    <h1 class="feed__title">Что смешного?</h1>
-                </div>
+            <section class="feed">
 
-                <nav class="tabs">
-                    <a class="tabs__item tabs__item_active" href="#">Для вас</a>
-                    <a class="tabs__item" href="#">Тренды</a>
-                    <a class="tabs__item" href="#">Свежие</a>
-                </nav>
-            </header>
-
-            <div class="feed__list">
-
-                <!-- Карточка мема -->
-                <article class="meme-card">
-
-                    <div class="meme-card__media">
-                        <img class="meme-card__image" src="" alt="">
-                        <h2 class="meme-card__title">Когда созвон мог быть мемом</h2>
+                <header class="feed__header">
+                    <div class="feed__heading">
+                        <span class="feed__eyebrow">Твоя мемосфера</span>
+                        <h1 class="feed__title">Что смешного?</h1>
                     </div>
 
-                    <div class="meme-card__content">
+                    <nav class="tabs">
+                        <a class="tabs__item tabs__item_active" href="#">Для вас</a>
+                        <a class="tabs__item" href="#">Тренды</a>
+                        <a class="tabs__item" href="#">Свежие</a>
+                    </nav>
+                </header>
 
-                        <header class="meme-card__header">
-                            <div class="meme-card__author">
-                                <img class="meme-card__avatar" src="" alt="">
+                <div class="feed__list">
 
-                                <div class="meme-card__author-info">
-                                    <span class="meme-card__author-name">Кот Абрам</span>
-                                    <span class="meme-card__meta">@abram_in_charge 12 мин</span>
-                                </div>
-                            </div>
+                    <!-- Карточка мема -->
+                    <article class="meme-card">
 
-                            <button class="meme-card__menu" type="button"></button>
-                        </header>
-
-                        <div class="meme-card__description">Собрал команду, чтобы обсудить, зачем мы собрались.</div>
-
-                        <ul class="meme-card__tags">
-                            <li class="meme-card__tag">#офисныйдзен</li>
-                            <li class="meme-card__tag">#кот</li>
-                            <li class="meme-card__tag">#созвон</li>
-                        </ul>
-
-                        <div class="meme-card__actions">
-                            <button class="meme-card__action meme-card__action_like" type="button">
-                                <span class="meme-card__action-icon"></span>
-                                <span class="meme-card__action-count">2,8K</span>
-                            </button>
-
-                            <button class="meme-card__action meme-card__action_comments" type="button">
-                                <span class="meme-card__action-icon"></span>
-                                <span class="meme-card__action-count">312</span>
-                            </button>
-
-                            <button class="meme-card__action meme-card__action_share" type="button">
-                                <span class="meme-card__action-icon"></span>
-                                <span class="meme-card__action-label">Поделиться</span>
-                            </button>
+                        <div class="meme-card__media">
+                            <img class="meme-card__image" src="" alt="">
+                            <h2 class="meme-card__title">Когда созвон мог быть мемом</h2>
                         </div>
 
+                        <div class="meme-card__content">
+
+                            <header class="meme-card__header">
+                                <div class="meme-card__author">
+                                    <img class="meme-card__avatar" src="" alt="">
+
+                                    <div class="meme-card__author-info">
+                                        <span class="meme-card__author-name">Кот Абрам</span>
+                                        <span class="meme-card__meta">@abram_in_charge 12 мин</span>
+                                    </div>
+                                </div>
+
+                                <button class="meme-card__menu" type="button"></button>
+                            </header>
+
+                            <div class="meme-card__description">Собрал команду, чтобы обсудить, зачем мы собрались.
+                            </div>
+
+                            <ul class="meme-card__tags">
+                                <li class="meme-card__tag">#офисныйдзен</li>
+                                <li class="meme-card__tag">#кот</li>
+                                <li class="meme-card__tag">#созвон</li>
+                            </ul>
+
+                            <div class="meme-card__actions">
+                                <button class="meme-card__action meme-card__action_like" type="button">
+                                    <span class="meme-card__action-icon"></span>
+                                    <span class="meme-card__action-count">2,8K</span>
+                                </button>
+
+                                <button class="meme-card__action meme-card__action_comments" type="button">
+                                    <span class="meme-card__action-icon"></span>
+                                    <span class="meme-card__action-count">312</span>
+                                </button>
+
+                                <button class="meme-card__action meme-card__action_share" type="button">
+                                    <span class="meme-card__action-icon"></span>
+                                    <span class="meme-card__action-label">Поделиться</span>
+                                </button>
+                            </div>
+
+                        </div>
+                    </article>
+
+                </div>
+
+            </section>
+
+            <!-- Правая панель -->
+            <aside class="layout__aside right-sidebar">
+
+                <section class="statistics">
+                    <header class="statistics__header">
+                        <span class="statistics__indicator"></span>
+                        <span class="statistics__label"></span>
+                    </header>
+
+                    <div class="statistics__body">
+                        <span class="statistics__value"></span>
+                        <span class="statistics__caption"></span>
+                    </div>
+
+                    <div class="statistics__chart">
+                        <span class="statistics__bar"></span>
+                    </div>
+                </section>
+
+                <section class="trending">
+                    <header class="trending__header">
+                        <h2 class="trending__title"></h2>
+                        <a class="trending__link" href="#"></a>
+                    </header>
+
+                    <ol class="trending__list">
+                        <li class="trending__item">
+                            <span class="trending__rank"></span>
+                            <div class="trending__info">
+                                <a class="trending__name" href="#"></a>
+                                <span class="trending__meta"></span>
+                            </div>
+                        </li>
+                    </ol>
+                </section>
+
+                <article class="weekly-pick">
+                    <span class="weekly-pick__label"></span>
+                    <h2 class="weekly-pick__title"></h2>
+                    <a class="weekly-pick__link" href="#">
+                        <span class="weekly-pick__icon"></span>
+                    </a>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-card__icon"></div>
+                    <div class="product-card__content">
+                        <h3 class="product-card__title"></h3>
+                        <p class="product-card__description"></p>
                     </div>
                 </article>
 
-            </div>
+                <footer class="right-sidebar__footer">
+                    <a class="right-sidebar__link" href="#"></a>
+                </footer>
 
-        </section>
-
-        <!-- Правая панель -->
-        <aside class="layout__aside right-sidebar">
-
-            <section class="statistics">
-                <header class="statistics__header">
-                    <span class="statistics__indicator"></span>
-                    <span class="statistics__label"></span>
-                </header>
-
-                <div class="statistics__body">
-                    <span class="statistics__value"></span>
-                    <span class="statistics__caption"></span>
-                </div>
-
-                <div class="statistics__chart">
-                    <span class="statistics__bar"></span>
-                </div>
-            </section>
-
-            <section class="trending">
-                <header class="trending__header">
-                    <h2 class="trending__title"></h2>
-                    <a class="trending__link" href="#"></a>
-                </header>
-
-                <ol class="trending__list">
-                    <li class="trending__item">
-                        <span class="trending__rank"></span>
-                        <div class="trending__info">
-                            <a class="trending__name" href="#"></a>
-                            <span class="trending__meta"></span>
-                        </div>
-                    </li>
-                </ol>
-            </section>
-
-            <article class="weekly-pick">
-                <span class="weekly-pick__label"></span>
-                <h2 class="weekly-pick__title"></h2>
-                <a class="weekly-pick__link" href="#">
-                    <span class="weekly-pick__icon"></span>
-                </a>
-            </article>
-
-            <article class="product-card">
-                <div class="product-card__icon"></div>
-                <div class="product-card__content">
-                    <h3 class="product-card__title"></h3>
-                    <p class="product-card__description"></p>
-                </div>
-            </article>
-
-            <footer class="right-sidebar__footer">
-                <a class="right-sidebar__link" href="#"></a>
-            </footer>
-
-        </aside>
-
+            </aside>
+        </div>
     </main>
 
 </div>
