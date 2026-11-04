@@ -5,10 +5,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: "Manrope", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
+    font: 500 14px/1.5 Manrope,sans-serif;
 }
 
 .page {
@@ -52,6 +49,7 @@ body {
 .navigation__list {
     list-style-type: none;
     padding: 0;
+    margin-top: 58px;
 }
 
 .navigation__link {
@@ -71,6 +69,15 @@ body {
     border-radius: 14px;
     display: flex;
     align-items: center;
+    transition: .18s;
+}
+.navigation__item:hover {
+    background-color: rgba(23, 24, 20, .055);
+    transform: translateX(2px);
+}
+
+.navigation__item:active {
+    background-color: #5F6159;
 }
 
 .navigation__icon {
@@ -99,6 +106,11 @@ body {
     color: white;
 }
 
+.navigation__item_active:hover {
+    background-color: #171814;
+    color: white;
+}
+
 .create-button {
     all: unset;
     width: 100%;
@@ -111,6 +123,16 @@ body {
     gap: 8px;
     cursor: pointer;
     min-height: 50px;
+    transition: .18s;
+}
+
+.create-button:hover {
+    background-color: #A9E800;
+    transform: translateY(-2px);
+}
+
+.create-button:active {
+    background-color: #C9FF38;
 }
 
 .button__icon {
@@ -130,31 +152,81 @@ body {
 }
 
 .sidebar__footer {
+    display: flex;
 
 }
 
 .user-profile {
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
 
+.user-profile__block {
+    display: flex;
+    border-radius: 14px;
+    padding: 8px;
+    gap: 10px;
+}
+
+.user-profile__block:hover {
+    background-color: rgba(23, 24, 20, .055);
 }
 
 .user-profile__avatar {
+    display: flex;
+    background-color: #171814;
+    color: #C9FF38;
+    flex: 0 0 39px;
+    height: 39px;
+    width: 39px;
+    border-radius: 13px;
+    font-size: 11px;
+    font-weight: 800;
+    align-items: center;
+    justify-content: center;
 
 }
 
 .user-profile__info {
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .user-profile__name {
-
+    font-size: 12px;
 }
 
 .user-profile__username {
-
+    color: #74766E;
+    font-size: 10px;
 }
 
 .user-profile__menu {
+    all: unset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+    transition: background .18s, color .18s;
+}
 
+.user-profile__menu:hover {
+    background-color: rgba(23, 24, 20, .055);
+}
+
+.user-profile__menu svg {
+    width: 18px;
+    height: 18px;
+    fill: #74766E;
+    stroke: none;
+    stroke-width: 1;
+    stroke-linecap: round;
+    stroke-linejoin: round;
 }
 
 
@@ -233,4 +305,14 @@ body {
 
 .right-sidebar {
 
+}
+
+.meme-card__media {
+    width: 100%;
+    aspect-ratio: 4/5;
+}
+
+.meme-card__image {
+    width: 100%;
+    height: 100%;
 }
