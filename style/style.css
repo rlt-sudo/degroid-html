@@ -18,6 +18,7 @@ body {
 }
 
 .layout__sidebar {
+    position: fixed;
     width: 224px;
     height: 100vh;
     background-color: rgba(243,241,235,.92);
@@ -285,6 +286,9 @@ body {
 }
 
 .tabs {
+    position: sticky;
+    top: 12px;
+    z-index: 10;
     display: flex;
     width: 100%;
     background: rgba(251, 250, 246, .9);
@@ -490,8 +494,11 @@ body {
 }
 
 .right-sidebar {
+    position: sticky;
+    top: 24px;
     display: flex;
     flex-direction: column;
+    align-self: start;
     gap: 22px;
 }
 
@@ -515,16 +522,17 @@ body {
 }
 
 .statistics__indicator {
-
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    margin-right: 4px;
+    border-radius: 50%;
+    background: #C9FF38;
+    box-shadow: 0 0 0 4px rgba(201, 255, 56, .12);
 }
 
-.statistics__label {
-
-}
-
-.statistics__body {
-
-}
+.statistics__label {}
+.statistics__body {}
 
 .statistics__value {
     display: block;
@@ -545,6 +553,100 @@ body {
 .statistic__bar {
 
 }
+
+.trending {
+    position: relative;
+    padding: 16px;
+    border: 1px solid #D9D6CD;
+    border-radius: 19px;
+    background: #FBFAF6;
+    overflow: hidden;
+}
+
+.trending__header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.trending__title {
+
+}
+
+.trending__link {
+
+}
+
+.trending__list {
+    all: unset;
+}
+
+.trending__item {
+    display: flex;
+    flex-direction: row;
+}
+
+.trending__rank {
+    color: #AAA;
+    font: 700 9px Unbounded;
+}
+
+.trending__info {
+    display: flex;
+    flex-direction: column;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.trending__name {
+
+}
+
+.trending__meta {
+    color: #74766E;
+    font-size: 8px;
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
